@@ -33,7 +33,7 @@ let cart = 0;
 const app = document.querySelector('#app');
 
 function header(active) {
-  return `<header class="site-header"><a href="#home" class="brand">amor<span class="brand-dot"></span></a>
+  return `<header class="site-header"><a href="#home" class="brand" aria-label="Amor — Art Craft Love"><img src="assets/amor-header-logo.png" alt="Amor — Art Craft Love" class="brand-logo"></a>
   <nav class="nav" id="nav">${navItems.map(([id,label])=>id==='custom'?`<div class="nav-dropdown"><a href="#custom" class="${active===id?'active':''}">${label}<span class="nav-caret">⌄</span></a><div class="dropdown-menu" aria-label="Custom gifting types">${giftingTypes.map(([type,slug])=>`<a href="#category-${slug}" data-gifting-type="${type}">${type}</a>`).join('')}</div></div>`:`<a href="#${id}" class="${active===id?'active':''}">${label}</a>`).join('')}<a href="#contact">Say hello</a></nav>
   <div class="header-actions"><a href="#custom" class="button">Start a project <span>↗</span></a><button class="icon-button" id="cart-button" title="Cart">Bag <span class="cart-count">${cart}</span></button><button class="icon-button menu-button" id="menu-button">☰</button></div></header>`;
 }

@@ -15,3 +15,5 @@ The opening brand screen holds for about 4.8 seconds, and navigation between has
 The homepage hero is now a custom-gifting bento grid. Hovering “Custom gifting” reveals Wooden Works, Stone Art, Sculpture, Mementos, Gift Rocks, Gift Frames, and Paintings.
 
 Each dropdown item now has its own gallery route and a linked customization brief with material selection, engraving/carving text, and studio reference directions.
+
+The header uses the supplied Amor lockup as a transparent `assets/amor-header-logo.png` so the mark blends into the cream header background.
